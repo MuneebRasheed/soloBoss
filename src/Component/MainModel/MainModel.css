@@ -1,0 +1,144 @@
+.home-container {
+  display: flex;
+  height: 555px;
+  box-sizing: border-box;
+  width: 891px;
+}
+
+.sidebar {
+  background-color: #b8b8b8;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 180px 4px rgba(0, 0, 0, 0.65);
+  justify-content: space-between;
+}
+
+.Title {
+  font-family: Lemon Days;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34.48px;
+  text-align: center;
+}
+.SubTitle {
+  font-family: Lemon Days;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.91px;
+  text-align: center;
+  color: #505050;
+}
+
+.Heading {
+  font-family: Lemon Days;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.91px;
+  text-align: left;
+  color: #505050;
+  margin-bottom: 15px;
+  width: 580px;
+}
+
+.monkey-image {
+  width: 100px; /* adjust as needed */
+  height: auto;
+}
+
+.details h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.details p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.presale-banner {
+  background-color: #e4e4e4;
+  width: 175px;
+  text-align: center;
+  font-weight: 400;
+  color: #000000;
+  height: 50px;
+  font-family: "Lemon Days";
+  font-size: 12px;
+  line-height: 15.91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 650px;
+  box-shadow: inset 0 0 180px 4px rgba(0, 0, 0, 0.99);
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+}
+
+.rightBnana {
+  width: 31px;
+  height: 30px;
+  /* transform: rotate(-180deg); */
+  position: absolute;
+  left: 10px;
+  top: -15px;
+}
+
+.LeftBnana {
+  width: 31px;
+  height: 30px;
+
+  position: absolute;
+  right: 10px;
+  top: -15px;
+}
+.BottomLine {
+  background-color: white;
+  color: rgba(80, 80, 80, 1);
+  height: 66px;
+  width: 665px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextOff {
+  font-family: "Lemon Days";
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.91px;
+  text-align: left;
+  color: #c9c9c9;
+  width: 575px;
+  border-right: 2px solid #c9c9c9;
+  height: 66px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+}
+.PowerButton {
+  padding-left: 4.5%;
+}
+.content-section-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

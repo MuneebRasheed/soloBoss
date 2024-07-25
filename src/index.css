@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lemon Days";
+  src: url("./fonts/LemonDays.ttf") format("truetype"),
+    url("./fonts/LemonDays.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: "Lemon Days", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16;
+}
+
+.FontFamily {
+  font-family: "Lemon Days";
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16;
+}
+/* .secodBackground {
+  width: 1362px;
+  height: 796px;
+} */

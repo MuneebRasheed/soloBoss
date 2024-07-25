@@ -1,0 +1,40 @@
+.loader {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.loader-bar {
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.loader-progress {
+  height: 20px;
+  background-color: white;
+  width: 0; /* This will be controlled by the progress prop */
+  transition: width 0.3s;
+}
+
+.loader-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
