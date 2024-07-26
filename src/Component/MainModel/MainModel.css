@@ -1,8 +1,12 @@
 .home-container {
   display: flex;
-  height: 555px;
+  /* height: 555px; */
   box-sizing: border-box;
-  width: 891px;
+  /* width: 891px; */
+
+  width: 60vw;
+  height: 70vh;
+  position: relative;
 }
 
 .sidebar {
@@ -112,7 +116,7 @@
   background-color: white;
   color: rgba(80, 80, 80, 1);
   height: 66px;
-  width: 665px;
+  width: 650px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -135,10 +139,75 @@
   align-items: center;
 }
 .PowerButton {
-  padding-left: 4.5%;
+  padding-left: 3%;
 }
 .content-section-top {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+/* model */
+.Model {
+  width: 60vw;
+  height: 70vh;
+  background-color: #ebeaea;
+  position: absolute;
+  top: 45px;
+  left: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Model1 {
+  width: 60vw;
+  height: 35vh;
+  background-color: #ebeaea;
+  position: absolute;
+  top: 45px;
+  left: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 143px;
+  width: 143px;
+}
+
+.iconRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 143px;
+  width: 143px;
+  transform: scaleX(-1);
+}
+
+.commingSoon {
+  font-family: Lemon Days;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 35.8px;
+  text-align: left;
+}
+
+.commingSoonBnana {
+  font-family: Lemon Days;
+  font-size: 67.5px;
+  font-weight: 400;
+  line-height: 89.5px;
+  text-align: left;
+}
+
+.divWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

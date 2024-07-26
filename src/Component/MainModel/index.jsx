@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import presaleIcon from "../../assets/preSale.png";
 import Audit from "../../assets/Audit.png";
-import Gallery from "../../assets/Gallery.png";
+import GalleryImg from "../../assets/Gallery.png";
 import news from "../../assets/news.png";
 import Telegram from "../../assets/Telegram.png";
 import Tools from "../../assets/Tools.png";
@@ -11,7 +11,19 @@ import SwitchIcon from "../../assets/powerSwitch.png";
 import Monkey from "../../assets/monkey.png";
 import "./MainModel.css";
 import MenuItem from "../MenuItem";
+import Chart from "../Chart/Chart";
+import monkeyModel from "../../assets/monkeyModel.png";
+import Cross from "../../assets/Cross.png";
+import CarouselComponent from "../Crousle";
+import News from "../News/News";
+import Gallery from "../Gallery/index.jsx";
 export default function MainModel() {
+  const [preSale, setPreSale] = useState(false);
+  const [gallery, setGallery] = useState(false);
+  const [newsState, setNews] = useState(false);
+  const [tokenmics, setTokenMics] = useState(false);
+  const [commingSoon, setCommingSoon] = useState(false);
+
   return (
     <div className="home-container">
       <div className="sidebar">
@@ -25,7 +37,14 @@ export default function MainModel() {
         <div style={{ position: "relative" }}>
           <div className="LeftBnana">🍌</div>
           <div className="rightBnana">🍌</div>
-          <div className="presale-banner">Presale is Coming Soon</div>
+          <div
+            className="presale-banner"
+            onClick={() => {
+              setCommingSoon(true);
+            }}
+          >
+            Presale is Coming Soon
+          </div>
         </div>
       </div>
       <div className="content">
@@ -34,10 +53,34 @@ export default function MainModel() {
             Click to below items to get more information
           </div>
           <div className="menu-grid">
-            <MenuItem icon={presaleIcon} label="Presale" />
-            <MenuItem icon={tokenomicsIcon} label="Tokenomics" />
-            <MenuItem icon={news} label="News" />
-            <MenuItem icon={Gallery} label="Gallery" />
+            <MenuItem
+              icon={presaleIcon}
+              label="Presale"
+              onClick={() => {
+                setPreSale(true);
+              }}
+            />
+            <MenuItem
+              icon={tokenomicsIcon}
+              label="Tokenomics"
+              onClick={() => {
+                setTokenMics(true);
+              }}
+            />
+            <MenuItem
+              icon={news}
+              label="News"
+              onClick={() => {
+                setNews(true);
+              }}
+            />
+            <MenuItem
+              icon={GalleryImg}
+              label="Gallery"
+              onClick={() => {
+                setGallery(true);
+              }}
+            />
             <MenuItem icon={Tools} label="Tools" comingSoon />
             <MenuItem icon={Audit} label="Audit" />
             <MenuItem icon={Telegram} label="Telegram" />
@@ -51,6 +94,129 @@ export default function MainModel() {
           </div>
         </div>
       </div>
+      {preSale ? (
+        <div className="Model">
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#C45951",
+              width: "51px",
+              height: "51px",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "absolute",
+              top: 0,
+              right: 0
+            }}
+            onClick={() => {
+              setPreSale(false);
+            }}
+          >
+            <img src={Cross} alt={"label"} />
+          </div>
+          <img src={monkeyModel} alt={"label"} className="iconLeft" />
+          <Chart />
+          <img src={monkeyModel} alt={"label"} className="iconRight" />
+        </div>
+      ) : null}
+      {tokenmics ? (
+        <div className="Model">
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#C45951",
+              width: "51px",
+              height: "51px",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "absolute",
+              top: 0,
+              right: 0
+            }}
+            onClick={() => {
+              setTokenMics(false);
+            }}
+          >
+            <img src={Cross} alt={"label"} />
+          </div>
+          <CarouselComponent />
+        </div>
+      ) : null}
+
+      {newsState ? (
+        <div className="Model">
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#C45951",
+              width: "51px",
+              height: "51px",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "absolute",
+              top: 0,
+              right: 0
+            }}
+            onClick={() => {
+              setNews(false);
+            }}
+          >
+            <img src={Cross} alt={"label"} />
+          </div>
+          <News />
+        </div>
+      ) : null}
+
+      {gallery ? (
+        <div className="Model">
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#C45951",
+              width: "51px",
+              height: "51px",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "absolute",
+              top: 0,
+              right: 0
+            }}
+            onClick={() => {
+              setGallery(false);
+            }}
+          >
+            <img src={Cross} alt={"label"} />
+          </div>
+          <Gallery />
+        </div>
+      ) : null}
+
+      {commingSoon ? (
+        <div className="Model1">
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#C45951",
+              width: "51px",
+              height: "51px",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "absolute",
+              top: 0,
+              right: 0
+            }}
+            onClick={() => {
+              setCommingSoon(false);
+            }}
+          >
+            <img src={Cross} alt={"label"} />
+          </div>
+          <div className="divWrapper">
+            <div className="commingSoonBnana">🍌</div>
+            <div className="commingSoon">Presale is coming soon</div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

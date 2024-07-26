@@ -15,7 +15,7 @@ export default function Main() {
           width: "1200px",
           backgroundImage: `url(${loader})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top center",
           display: "flex",
           alignItems: "center",
           justifyContent: "center"

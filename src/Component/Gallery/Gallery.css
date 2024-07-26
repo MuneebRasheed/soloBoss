@@ -1,0 +1,35 @@
+.gallery-container {
+  flex-direction: column;
+  display: flex;
+  width: 880px;
+  height: 500px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.firstImage {
+}
+
+.gallery-image1 {
+  width: 270px;
+  height: 237px;
+}
+.gallery-image2 {
+  width: 188px;
+  height: 173px;
+}
+.secondImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row1 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  height: 237px;
+  width: 800px;
+  justify-content: space-between;
+}

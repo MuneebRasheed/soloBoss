@@ -1,0 +1,46 @@
+.solboss-container {
+  padding: 20px;
+
+  max-width: 557px;
+  margin: auto;
+  text-align: center;
+  height: 504px; /* Set a max-height to enable scrolling when content overflows */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.solboss-image {
+  width: 100%;
+  height: 246px;
+  object-fit: cover; /* Similar to background-size: cover; */
+  object-position: top center;
+}
+
+.solboss-content {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.solboss-content h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #000;
+}
+
+.solboss-title {
+  font-family: Lemon Days;
+  font-size: 24.43px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.solboss-subtitle {
+  font-family: Lemon Days;
+  font-size: 10.94px;
+  font-weight: 400;
+  line-height: 16.42px;
+  text-align: left;
+}

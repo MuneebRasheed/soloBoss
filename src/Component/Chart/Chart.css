@@ -1,0 +1,64 @@
+.priceText {
+  font-family: "Lemon Days";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.56px;
+  text-align: center;
+}
+.Yellow {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  align-items: center;
+}
+.eightyDiv {
+  border: 2px solid black;
+  height: 42px;
+  width: 42px;
+  background-color: white;
+  font-family: "Lemon Days";
+  border-radius: 21px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.divText {
+  font-family: Lemon Days;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29.17px;
+  text-align: center;
+}
+.buttonDiv {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 120px;
+  height: 51px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1.79px 1.79px 0px 1.16px #00000014,
+    /* Inset shadow */ 2.1px 2.1px 0px 0px #00000014; /* Outer shadow */
+}
+.buttonText {
+  width: 87.06px;
+  height: 30px;
+  font-family: "Lemon Days";
+  font-size: 10.94px;
+  font-weight: 400;
+  line-height: 14.51px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
